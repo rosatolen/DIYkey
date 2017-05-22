@@ -1,4 +1,6 @@
-Instructions will be updated after CryptoRave 2017. Thank you for your patience!
+The following are missing and are in the process of being added:
+1. Instructions on how to assemble a key with the below materials
+1. Instructions on how to compile the code and flash it to the device
 
 # Tiger Key || Llave de Tigre
 
