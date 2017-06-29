@@ -1,3 +1,3 @@
 [submodule "micronucleus"]
 	path = micronucleus
-	url = git@github.com:rosatolen/micronucleus.git
+	url = https://github.com/rosatolen/micronucleus.git
