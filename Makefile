@@ -1,3 +1,6 @@
+deps:
+	git submodule init && git submodule update
+
 packschematics:
 	tar cvfz ./key_kicad_pro.tgz ./key/
 

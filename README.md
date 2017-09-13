@@ -27,9 +27,8 @@ TODO: explain what these steps do
     a. Arduino with the DigisparkKeyboard libraries
     b. avrdude
     c. make autotools
-    d. 
 2. Pull this repository
-3. Run `git submodule init && git submodule update`
+3. Run `make deps`
 4. `cd micronucleus/firmware/`
 5. `make`
 6. Return to the main tigerkey directory
