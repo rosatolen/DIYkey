@@ -1,12 +1,12 @@
-pack:
+packschematics:
 	tar cvfz ./key_kicad_pro.tgz ./key/
 
-ping:
+pingdevice:
 	sudo avrdude -c usbtiny -p attiny85
 
-bflash:
+bootflash:
 	sudo avrdude -c usbtiny -p attiny85 -U lfuse:w:0xd1:m -U hfuse:w:0xdd:m -U efuse:w:0xfe:m -B 20
 	sudo avrdude -c usbtiny -p attiny85 -U flash:w:micronucleus/firmware/main.hex
 
-pflash:
-	./micronucleus/commandline/micronucleus /tmp/arduino_build_531925/tigerkey.ino.hex
+programflash:
+	./micronucleus/commandline/micronucleus /tmp/arduino_build_419877/tigerkey.ino.hex
