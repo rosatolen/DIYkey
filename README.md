@@ -47,4 +47,7 @@ find / -name DigisparkKeyboard 2>/dev/null
 14. Change the value for ATTiny85 USB\_CFG\_DMINUS\_BIT from 3 to 0
 15. Change the value for ATTiny85 USB\_CFG\_DPLUS\_BIT from 4 to 1
 16. Open the `arduino\_code/tigerkey/tigerkey.ino program` in Arduino
-17. Compile the program and record where the .hex file for this program is stored
+17. Edit the preferences of Arduino to show verbose compilation output
+18. Compile the program and record where the .hex file for this program is stored
+19. Put the path to the .hex file in the main Makefile under the programflash command
+20. Plug the TigerKey into one of your USB ports and run `make programflash`

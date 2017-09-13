@@ -12,4 +12,4 @@ bootflash:
 	sudo avrdude -c usbtiny -p attiny85 -U flash:w:micronucleus/firmware/main.hex
 
 programflash:
-	./micronucleus/commandline/micronucleus /tmp/arduino_build_419877/tigerkey.ino.hex
+	./micronucleus/commandline/micronucleus <your-hex-file>
