@@ -1,3 +1,5 @@
 Tech Debt
-- We need better control of the compilation of the DigiKeyboard code (i.e. controlling how it sets the D+ and D- pins which is in 
+- We need better control of the compilation of the DigiKeyboard code (i.e. controlling how it sets the D+ and D- pins which is in
   /home/<username>/.arduino15/packages/digistump/hardware/avr/1.6.7/libraries/DigisparkKeyboard/usbconfig.h)
+
+Add submodules to makefile
