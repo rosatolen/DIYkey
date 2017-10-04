@@ -18,7 +18,6 @@ You will need:
 1. 1 Resistor 1500 Ohms (1200 Ohms works)
 1. 1 Resistor  330 Ohms
 1. 1 LED
-1. 2 General Zenner Diodes
 1. Some Connecting Wire (if needed)
 
 # Setup Instructions
