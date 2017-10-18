@@ -1,15 +1,17 @@
-The following are missing and are in the process of being added:
-1. Instructions on how to assemble a key with the below materials
-1. Instructions on how to compile the code and flash it to the device
+# TIGER Key
 
-# Tiger Key || Llave de Tigre
+The TIGER key a hardware token that stores your passwords.
 
-Make a hardware key that contains passwords yourself for around $8.
-
-## Goal:
-Bring the cost of materials down to $1-5.
+This repo will contain all the information you need if you want to build your
+own token.
 
 ## Materials:
+
+One of our goals is to keep the cost of materials low. Right now, it should cost
+around 5 USD to buy the parts in the United States, Ecuador, or Brazil.
+
+You will need:
+
 1. 1 Permanent Prototype Board
 1. 1 ATTiny85
 1. 2 Resistors  68 Ohms
@@ -21,7 +23,7 @@ Bring the cost of materials down to $1-5.
 
 # Setup Instructions
 
-TODO: explain what these steps do
+(We're updating these instructions. See issue #4)
 
 1. Install the following dependencies:
     a. Arduino with the DigisparkKeyboard libraries
