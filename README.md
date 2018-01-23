@@ -5,12 +5,11 @@ contain all the information you need if you want to build your own token.
 
 # Hardware Setup Instructions
 
-## Prerequisite Materials:
+## Prerequisite Materials
 
 One of our goals is to keep the cost of materials low. Initially we created the
 first prototype with around 7 USD but the goal was to make large batch assembly
-cost as close to $1 as possible for people who live in the United States,
-Ecuador, or Brazil.
+cost as close to $1 as possible.
 
 You will need:
 
@@ -26,49 +25,50 @@ You will need:
 
 ## Instructions
 
-![schematic](https://github.com/rosatolen/DIYkey/blob/master/schematic.jpeg)
-
 ```
 WARNING
 
 You should not solder the ATTiny85 to a permaproto board before programming it
-unless you have clips to easily program it once it has placed.
+unless you have clips to easily help you install software once it has been
+placed.
 
 ```
 
+Use the below image to connect the hardware materials. Double check that the diode polarity is correct.
+
+![schematic](https://github.com/rosatolen/DIYkey/blob/master/schematic.jpeg)
+
 # Software Setup Instructions
 
-## Prerequisite Materials:
+## Prerequisite Materials
 
 1. [Adafruit AVR Programmer](https://www.adafruit.com/product/46) or [Sparkfun AVR Programmer](https://www.sparkfun.com/products/11801)
 
 ## Instructions
 
-(We're updating these instructions. See issue #4)
-
 1. Install the following dependencies:
-    a. Arduino with the DigisparkKeyboard libraries
-    b. avrdude
-    c. make autotools
-2. Pull this repository
-3. Run `make deps`
-4. `cd micronucleus/firmware/`
-5. `make`
-6. Return to the main DIYkey directory
-7. Connect your DIYkey to a Attiny85 programmer and run `make bootflash`
-8. `cd micronucleus/commandline/`
-9. `make`
-10. Install avrdude for your operating system. TODO: provide links for different OSs
-11. Search through your system for the arduino DigisparkKeyboard directory.
+    1. Arduino with the DigisparkKeyboard libraries
+    1. avrdude
+    1. make autotools
+1. Pull this repository
+1. Run `make deps`
+1. `cd micronucleus/firmware/`
+1. `make`
+1. Return to the main DIYkey directory
+1. Connect your DIYkey to a Attiny85 programmer and run `make bootflash`
+1. `cd micronucleus/commandline/`
+1. `make`
+1. Install avrdude for your operating system
+1. Search through your system for the arduino DigisparkKeyboard directory
 ```
 find / -name DigisparkKeyboard 2>/dev/null
 ```
-12. Open the usbconfig.h file in that directory
-13. Change the usbconfig.h file in DigiKeyboard folder for Ardunio
-14. Change the value for ATTiny85 USB\_CFG\_DMINUS\_BIT from 3 to 0
-15. Change the value for ATTiny85 USB\_CFG\_DPLUS\_BIT from 4 to 1
-16. Open the `arduino\_code/DIYkey/DIYkey program` in Arduino
-17. Edit the preferences of Arduino to show verbose compilation output
-18. Compile the program and record where the .hex file for this program is stored
-19. Put the path to the .hex file in the main Makefile under the programflash command
-20. Plug the DIYkey into one of your USB ports and run `make programflash`
+1. Open the usbconfig.h file in that directory
+1. Change the usbconfig.h file in DigiKeyboard folder for Ardunio
+1. Change the value for ATTiny85 USB\_CFG\_DMINUS\_BIT from 3 to 0
+1. Change the value for ATTiny85 USB\_CFG\_DPLUS\_BIT from 4 to 1
+1. Open the `arduino\_code/DIYkey/DIYkey program` in Arduino
+1. Edit the preferences of Arduino to show verbose compilation output
+1. Compile the program and record where the .hex file for this program is stored
+1. Put the path to the .hex file in the main Makefile under the programflash command
+1. Plug the DIYkey into one of your USB ports and run `make programflash`
