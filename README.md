@@ -26,7 +26,7 @@ You will need:
 
 ## Instructions
 
-[image here]
+![schematic](https://github.com/rosatolen/DIYkey/blob/master/schematic.jpeg)
 
 ```
 WARNING
